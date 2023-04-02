@@ -1,0 +1,60 @@
+{
+  "name": "s3-ceph",
+  "author": {
+    "name": "DonVietnam",
+    "email": "don.vietnam.js@gmail.com"
+  },
+  "version": "1.0.0",
+  "description": "Implementation of ceph RESTful API that is compatible with the basic data access model of the Amazon S3 API",
+  "license": "MIT",
+  "keywords": [
+    "https",
+    "http",
+    "nodejs",
+    "aws",
+    "s3",
+    "ceph",
+    "object",
+    "storage",
+    "api"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DonVietnam/s3-ceph"
+  },
+  "bugs": {
+    "url": "https://github.com/DonVietnam/s3-ceph/issues",
+    "email": "don.vietnam.js@gmail.com"
+  },
+  "homepage": "https://github.com/DonVietnam/s3-ceph",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "lib/",
+    "index.js",
+    "index.d.ts"
+  ],
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon --signal SIGTERM --exec \"node src/index.js\"",
+    "lint": "eslint --ignore-path .eslintignore .",
+    "fix": "eslint --fix --ignore-path .eslintignore .",
+    "unit": "jest test/unit -i --passWithNoTests",
+    "integration": "jest test/integration -i --passWithNoTests",
+    "test": "npm run unit && npm run integration"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.7",
+    "eslint": "^7.8.1",
+    "eslint-config-prettier": "^8.3.0",
+    "jest": "^27.3.1",
+    "nodemon": "^2.0.4",
+    "prettier": "2.5.1",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+  }
+}
